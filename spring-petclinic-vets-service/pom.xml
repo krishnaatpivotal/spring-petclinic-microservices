@@ -70,6 +70,12 @@
             <artifactId>spring-cloud-starter-sleuth</artifactId>
         </dependency>
 
+        <!-- Wavefront TO -->
+        <dependency>
+            <groupId>com.wavefront</groupId>
+            <artifactId>wavefront-spring-boot-starter</artifactId>
+        </dependency>
+
         <!-- Third parties-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
