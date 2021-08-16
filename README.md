@@ -9,7 +9,7 @@ and the Eureka Service Discovery from the [Spring Cloud Netflix](https://github.
 ## Starting services locally
 
 Every microservice is a Spring Boot application and can be started locally using IDE ([Lombok](https://projectlombok.org/) plugin has to be set up) or `../mvnw spring-boot:run` command. Please note that supporting services (Config and Discovery Server) must be started before any other application (Customers, Vets, Visits and API).
-Startup of Tracing server, Admin server, Grafana and Prometheus is optional.
+
 If everything goes well, you can access the following services at given location:
 * Discovery Server - http://localhost:8761
 * Config Server - http://localhost:8888
@@ -46,15 +46,6 @@ Our issue tracker is available here: https://github.com/spring-petclinic/spring-
 In its default configuration, Petclinic uses an in-memory database (HSQLDB) which gets populated at startup with data.
 A similar setup is provided for MySql in case a persistent database configuration is needed.
 Dependency for Connector/J, the MySQL JDBC driver is already included in the `pom.xml` files.
-
-### Start a MySql database
-
-You may start a MySql database with docker:
-
-```
-docker run -e MYSQL_ROOT_PASSWORD=petclinic -e MYSQL_DATABASE=petclinic -p 3306:3306 mysql:5.7.8
-```
-or download and install the MySQL database (e.g., MySQL Community Server 5.7 GA), which can be found here: https://dev.mysql.com/downloads/
 
 ### Use the Spring 'mysql' profile
 
