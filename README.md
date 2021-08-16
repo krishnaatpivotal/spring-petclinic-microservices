@@ -60,6 +60,28 @@ All those three REST controllers `OwnerResource`, `PetResource` and `VisitResour
 * `visits-service` application has the following custom metrics enabled:
   * @Timed: `petclinic.visit`
 
+### Wavefront integration
+
+Please refer to the documentation for wavefront and Spring integration here: https://docs.wavefront.com/wavefront_springboot.html
+
+In the Getting Started guide, in Step 1: select "Initialize an Existing Project" and follow the instructions.
+
+Repo has all the configuration and POM depedencies added and commented out.
+
+* In module "spring-petclinic-api-gateway":
+  * Uncomment the wavefront starter dependency
+  * In src/main/resources/application.yml, uncomment wavefront and management sections.
+  * Restart the App and at the end of the Commandline you will see the wavefront freemium account config printed out
+* In module "spring-petclinic-customers-service":   
+  * Uncomment the wavefront starter dependency
+  * In src/main/resources/application.properties, uncomment wavefront and management sections.
+* In module "spring-petclinic-vets-service":   
+  * Uncomment the wavefront starter dependency
+  * In src/main/resources/application.properties, uncomment wavefront and management sections.
+* In module "spring-petclinic-visits-service":   
+  * Uncomment the wavefront starter dependency
+  * In src/main/resources/application.properties, uncomment wavefront and management sections.
+   
 ## Looking for something in particular?
 
 | Spring Cloud components         | Resources  |
