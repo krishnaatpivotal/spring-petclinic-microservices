@@ -64,7 +64,7 @@ All those three REST controllers `OwnerResource`, `PetResource` and `VisitResour
 
 Please refer to the documentation for wavefront and Spring integration here: https://docs.wavefront.com/wavefront_springboot.html
 
-In the Getting Started guide, in Step 1: select "Initialize an Existing Project" and follow the instructions.
+In the Getting Started guide,  `Step 1` : select `Initialize an Existing Project` and follow the instructions.
 
 Repo has all the configuration and POM depedencies added and commented out.
 
