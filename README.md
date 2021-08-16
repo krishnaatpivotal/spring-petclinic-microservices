@@ -70,7 +70,7 @@ Repo has all the configuration and POM depedencies added and commented out.
 
 * In module `spring-petclinic-api-gateway`:
   * In `pom.xml` uncomment the wavefront starter dependency
-  * In `src/main/resources/application.yml`, uncomment wavefront and management sections.
+  * If not running the app for the First time, in `src/main/resources/application.yml`, uncomment wavefront and management sections.
   * Restart the App and at the end of the Commandline you will see the wavefront freemium account config printed out
 * In module `spring-petclinic-customers-service`:   
   * In `pom.xml` uncomment the wavefront starter dependency
